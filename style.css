@@ -1,0 +1,405 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #f1f3f6;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2874f0;
+    color: white;
+    padding: 0 200px;
+}
+
+header a img {
+    width: 5rem;
+    height: auto;
+}
+
+#logo-search {
+    display: flex;
+    align-items: center;
+}
+
+header input[type="text"] {
+    border: 2px solid white;
+    background-color: white;
+    background-image: url('images/search.png');
+    background-position: 97%;
+    background-repeat: no-repeat;
+    background-size: 6%;
+    padding: 12px 45px 12px 20px;
+    font-size: 1rem;
+    width: 500px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+#login-btn {
+    background-color: white; 
+    color: #2874f0; 
+    font-size: 1rem;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links .cart {
+    background-image: url('images/cart.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 25px; 
+}
+
+/* nav bar */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: white; 
+    font-size: 0.8rem;
+}
+
+#nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: 11%; 
+    text-align: center;
+}
+
+#nav div a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#nav div a img {
+    width: 50px; 
+    height: auto;
+    margin-bottom: 8px; 
+}
+
+#nav div a:hover {
+    color: #2874f0; 
+}
+
+#nav div a:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Products section */
+#product-section{
+    margin: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#add{
+    width: 15%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#main{
+    width: 85%;
+    background-color: white;
+}
+
+#deals-of-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px 30px;
+    border-bottom: 1px solid #9ea2a8;
+}
+
+#deals-of-day h3{
+    font-size: 1.2rem;
+}
+
+#deals-of-day button{
+    background-color: #2874f0;
+    color: white;
+    padding: 10px;
+    border: #2874f0;
+    font-size: 0.9rem;
+}
+
+.products{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    max-width: 100%;
+    font-size: 0.8rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.product{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    flex-shrink: 0;
+}
+
+.product img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover; 
+    padding-bottom: 10px;
+}
+.product a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.product a p{
+    text-align: center;
+    padding: 3px;
+}
+
+.product a .discount{
+    color: green;
+}
+
+.product a .taglines{
+    color: grey;
+}
+
+#books-section{
+    background-color: white;
+    margin: 10px 40px;
+}
+
+#books-music {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px 30px;
+    border-bottom: 1px solid #9ea2a8;
+}
+
+#books-music h3{
+    font-size: 1.2rem;
+   
+}
+
+#books-music button{
+    background-color: #2874f0;
+    color: white;
+    padding: 10px;
+    border: #2874f0;
+    font-size: 0.9rem;
+}
+
+
+
+@media all and (max-width:768px){
+    header {
+        padding: 0 15px;
+        width: 100%;
+    }
+    
+    header a img {
+        width: 3rem;
+        height: auto;
+    }
+    
+    header input[type="text"] {
+        padding: 4px 10px 4px 6px;
+        font-size: 0.7rem;
+        width: 250px;
+        height: 30px;
+        background-size: 6%;
+    }
+
+    .nav-links a {
+        margin: 0 15px;
+        font-size: 0.7rem;
+    }
+    
+    #login-btn {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+    
+    .nav-links .cart {
+        background-size: 0px;
+        padding-left: 10px; 
+    }
+
+    /* nav bar */
+    #nav {
+        padding: 10px 20px;
+    }
+
+    /* Products section */
+    #product-section{
+        margin: 5px 10px;
+    }
+
+    #add{
+        width: 25%;
+    }
+    #add img{
+        width:100%;
+    }
+
+    #main{
+        width: 75%;
+    }
+
+    .products{
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    .product{
+        width: 150px;
+    }
+
+    .product img{
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+    }
+    #books-section{
+        margin: 5px 10px;
+    }
+}
+
+@media all and (max-width:458px){
+    header {
+        padding: 0 10px;
+        width: 100%;
+    }
+    
+    header a img {
+        width: 2rem;
+        height: auto;
+    }
+    
+    header input[type="text"] {
+        padding: 4px 10px 4px 6px;
+        font-size: 0.6rem;
+        width: 200px;
+        height: 30px;
+        background-size: 6%;
+    }
+
+    .nav-links a {
+        margin: 0 7px;
+        font-size: 0.7rem;
+    }
+    
+    #login-btn {
+        font-size: 0.7rem;
+        padding: 4px 7px;
+    }
+    
+    .nav-links .cart {
+        background-size: 0px;
+        padding-left: 5px; 
+    }
+
+    /* nav bar */
+    #nav {
+        padding: 5px 10px;
+        font-size: 0.6rem;
+    }
+
+    #nav div a img {
+        width: 40px; 
+        height: auto;
+        margin-bottom: 5px; 
+    }
+
+
+    /* Products section */
+    #product-section{
+        margin: 3px 7px;
+        flex-wrap: wrap;
+    }
+
+    #add{
+        width: 80%;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    #add img{
+        width: 85%;
+        padding-left: 150px;
+    }
+
+    #main{
+        width: 100%;
+    }
+
+    .products{
+        gap: 8px;
+        max-width: 100%;
+    }
+
+    .product{
+        width: 120px;
+        font-size: 0.6rem;
+    }
+
+    .product img{
+        width: 120px;
+        height: 180px;
+        object-fit: cover;
+    }
+    #books-section{
+        margin: 3px 7px;
+    }
+
+    #books-music,#deals-of-day{
+        padding: 5px 10px;
+    }
+    #books-music h3,#deals-of-day h3{
+        font-size: 1rem
+    }
+}
