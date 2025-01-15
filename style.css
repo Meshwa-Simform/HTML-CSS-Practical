@@ -73,7 +73,7 @@ header input[type="text"] {
 .nav-links .cart {
     background-image: url('images/cart.png');
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 0px;
     padding-left: 25px; 
 }
 
@@ -132,6 +132,10 @@ header input[type="text"] {
     width: 15%;
     padding: 10px;
     margin-top: 20px;
+}
+#add img{
+    width: 100%;
+    height: auto;
 }
 
 #main{
@@ -234,6 +238,74 @@ header input[type="text"] {
     font-size: 0.9rem;
 }
 
+@media all and (max-width:1080px),(min-width:768px){
+    header {
+        padding: 0 80px;
+        width: 100%;
+    }
+    
+    header a img {
+        width: 3.5rem;
+        height: auto;
+    }
+    
+    header input[type="text"] {
+        padding: 6px 14px 6px 8px;
+        font-size: 0.8rem;
+        width: 300px;
+        height: 35px;
+        background-size: 7%;
+    }
+
+    .nav-links a {
+        margin: 0 20px;
+        font-size: 0.8rem;
+    }
+    
+    #login-btn {
+        font-size: 0.8rem;
+        padding: 8px 13px;
+    }
+    
+    .nav-links .cart {
+        background-size: 0px;
+        padding-left: 12px; 
+    }
+
+    /* nav bar */
+    #nav {
+        padding: 10px;
+    }
+
+    #nav div a img {
+        width: 40px; 
+        height: auto;
+        margin-bottom: 5px; 
+    }
+
+    /* Products section */
+    #product-section{
+        margin: 6px 10px;
+    }
+
+    .products{
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    .product{
+        width: 170px;
+    }
+
+    .product img{
+        width: 170px;
+        height: 220px;
+        object-fit: cover;
+    }
+    #books-section{
+        margin: 10px 25px;
+    }
+}
 
 
 @media all and (max-width:768px){
@@ -310,23 +382,25 @@ header input[type="text"] {
     }
 }
 
-@media all and (max-width:458px){
+@media all and (max-width:510px){
     header {
         padding: 0 10px;
         width: 100%;
     }
     
     header a img {
-        width: 2rem;
+        width: 2.5rem;
         height: auto;
+        margin-left: 45px;
     }
     
     header input[type="text"] {
-        padding: 4px 10px 4px 6px;
+        display: none;
+        /* padding: 4px 10px 4px 6px;
         font-size: 0.6rem;
         width: 200px;
         height: 30px;
-        background-size: 6%;
+        background-size: 6%; */
     }
 
     .nav-links a {
