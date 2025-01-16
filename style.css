@@ -18,7 +18,8 @@ header {
     align-items: center;
     background-color: #2874f0;
     color: white;
-    padding: 0 200px;
+    justify-content: center;
+    gap: 15%;
 }
 
 header a img {
@@ -238,9 +239,8 @@ header input[type="text"] {
     font-size: 0.9rem;
 }
 
-@media all and (max-width:1080px),(min-width:768px){
+@media all and (min-width:768px) and (max-width:1080px){
     header {
-        padding: 0 80px;
         width: 100%;
     }
     
@@ -274,7 +274,7 @@ header input[type="text"] {
 
     /* nav bar */
     #nav {
-        padding: 10px;
+        padding: 10px 20px;
     }
 
     #nav div a img {
@@ -285,7 +285,7 @@ header input[type="text"] {
 
     /* Products section */
     #product-section{
-        margin: 6px 10px;
+        margin: 10px 25px;
     }
 
     .products{
