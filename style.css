@@ -131,12 +131,14 @@ header input[type="text"] {
 
 #add{
     width: 15%;
-    padding: 10px;
+    /* padding: 10px;
     margin-top: 20px;
+    padding-right: 0; */
+    margin-left: 5px;
 }
 #add img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 #main{
@@ -237,6 +239,18 @@ header input[type="text"] {
     padding: 10px;
     border: #2874f0;
     font-size: 0.9rem;
+}
+
+@media all and (max-width:1080px){
+    #add img{
+        display: none;
+    }
+    #add{
+        width: 0;
+    }
+    #main{
+        width: 100%;
+    }
 }
 
 @media all and (min-width:768px) and (max-width:1080px){
@@ -352,15 +366,15 @@ header input[type="text"] {
         margin: 5px 10px;
     }
 
-    #add{
+    /* #add{
         width: 25%;
     }
     #add img{
         width:100%;
-    }
+    } */
 
     #main{
-        width: 75%;
+        width: 100%;
     }
 
     .products{
@@ -382,16 +396,16 @@ header input[type="text"] {
     }
 }
 
-@media all and (max-width:510px){
+@media all and (max-width:590px){
     header {
         padding: 0 10px;
         width: 100%;
     }
     
     header a img {
-        width: 2.5rem;
+        /* width: 2.5rem; */
         height: auto;
-        margin-left: 45px;
+        /* margin-left: 45px; */
     }
     
     header input[type="text"] {
@@ -405,11 +419,11 @@ header input[type="text"] {
 
     .nav-links a {
         margin: 0 7px;
-        font-size: 0.7rem;
+        /* font-size: 0.7rem; */
     }
     
     #login-btn {
-        font-size: 0.7rem;
+        /* font-size: 0.7rem; */
         padding: 4px 7px;
     }
     
@@ -437,7 +451,7 @@ header input[type="text"] {
         flex-wrap: wrap;
     }
 
-    #add{
+    /* #add{
         width: 80%;
         margin-top: 0px;
         padding: 0px;
@@ -445,7 +459,7 @@ header input[type="text"] {
     #add img{
         width: 85%;
         padding-left: 150px;
-    }
+    } */
 
     #main{
         width: 100%;
