@@ -15,6 +15,6 @@ This is a responsive Flipkart page designed using HTML & CSS.
 ![Mobile View](assets/images/mobile-screenshot.png)
 
 ## Features
-- Fully responsive layout
-- Clean and simple Design
-- Optimized for mobile, tablet, and desktop views
+- Fully responsive layout.
+- Clean and simple Design.
+- Optimized for mobile, tablet, and desktop views.
