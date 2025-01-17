@@ -251,6 +251,20 @@ header input[type="text"] {
     #main{
         width: 100%;
     }
+    #nav{
+        display: flex;
+        gap: 30px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        max-width: 100%;
+        font-size: 0.7;
+        padding: 0 10px;
+        height: 100px;
+    }
+    
+    ::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 @media all and (min-width:768px) and (max-width:1080px){
@@ -284,17 +298,6 @@ header input[type="text"] {
     .nav-links .cart {
         background-size: 0px;
         padding-left: 12px; 
-    }
-
-    /* nav bar */
-    #nav {
-        padding: 10px 20px;
-    }
-
-    #nav div a img {
-        width: 40px; 
-        height: auto;
-        margin-bottom: 5px; 
     }
 
     /* Products section */
@@ -356,22 +359,10 @@ header input[type="text"] {
         padding-left: 10px; 
     }
 
-    /* nav bar */
-    #nav {
-        padding: 10px 20px;
-    }
-
     /* Products section */
     #product-section{
         margin: 5px 10px;
     }
-
-    /* #add{
-        width: 25%;
-    }
-    #add img{
-        width:100%;
-    } */
 
     #main{
         width: 100%;
@@ -432,18 +423,6 @@ header input[type="text"] {
         padding-left: 5px; 
     }
 
-    /* nav bar */
-    #nav {
-        padding: 5px 10px;
-        font-size: 0.6rem;
-    }
-
-    #nav div a img {
-        width: 40px; 
-        height: auto;
-        margin-bottom: 5px; 
-    }
-
 
     /* Products section */
     #product-section{
@@ -451,15 +430,7 @@ header input[type="text"] {
         flex-wrap: wrap;
     }
 
-    /* #add{
-        width: 80%;
-        margin-top: 0px;
-        padding: 0px;
-    }
-    #add img{
-        width: 85%;
-        padding-left: 150px;
-    } */
+
 
     #main{
         width: 100%;
